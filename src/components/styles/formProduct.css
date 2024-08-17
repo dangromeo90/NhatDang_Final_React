@@ -1,0 +1,131 @@
+/* Đặt màu nền và kiểu chữ chung cho form */
+.formProduct {
+  margin-top: -20px;
+}
+
+.add-product-form {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Cải thiện kiểu dáng cho các trường nhập liệu */
+.add-product-form input,
+.add-product-form textarea,
+.add-product-form select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Đảm bảo padding và border được bao gồm trong tổng chiều rộng và chiều cao */
+}
+
+.add-product-form input:focus,
+.add-product-form textarea:focus,
+.add-product-form select:focus {
+  border-color: #86c200;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(134, 194, 0, 0.25);
+}
+
+/* Cải thiện kiểu dáng cho nút bấm */
+.add-product-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #86c200;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-product-form button:hover {
+  background-color: #72a700;
+}
+
+/* Đặt kiểu chữ và khoảng cách cho các nhãn */
+.add-product-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Cập nhật CSS cho textarea */
+.add-product-form textarea {
+  min-height: 100px; /* Đặt chiều cao tối thiểu cho textarea */
+  resize: vertical; /* Cho phép thay đổi kích thước theo chiều dọc */
+}
+
+/* Cập nhật kiểu dáng cho trường tải lên ảnh */
+.add-product-form input[type="file"] {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Cập nhật kiểu dáng cho dropdown danh mục */
+.add-product-form .category-dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Modal Body */
+.product-detail-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* Khoảng cách giữa hình ảnh và mô tả */
+}
+
+/* Bên trái: hình ảnh sản phẩm */
+.product-detail-left {
+  flex: 1; /* Chiếm 40% chiều rộng */
+  margin-right: 20px; /* Khoảng cách giữa image và details */
+  position: sticky;
+  top: 20px; /* Khoảng cách từ đầu trang đến khi sticky bắt đầu */
+  align-self: flex-start; /* Giữ ảnh nằm ở đầu của container */
+}
+
+.product-detail-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Bên phải: mô tả sản phẩm */
+.product-detail-right {
+  flex: 2;
+}
+
+.product-detail-right strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-detail-right p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Nếu bạn có hình ảnh trong mô tả */
+.product-detail-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 10px 0; /* Khoảng cách giữa hình ảnh và văn bản */
+}

@@ -1,0 +1,158 @@
+/* Dashboard.css */
+
+.dashboard {
+  display: flex;
+  font-family: 'Quicksand', sans-serif;  
+  
+}
+
+.content {
+  margin-left: 250px; /* Ensure it matches the width of the sidebar */
+  width: calc(100% - 250px);
+  background-color: white; 
+}
+
+.management {
+  margin-top: 20px;
+}
+
+.management h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px; /* Giảm khoảng cách dưới tiêu đề */
+}
+
+.management .btn-add {
+  padding: 10px 20px;
+  background-color: #86c200;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.management .btn-add:hover {
+  background-color: #74a600;
+}
+/* src/styles/Dashboard.css */
+.management {
+  max-width: 1265px;
+}
+
+.table tbody tr td,
+.table thead tr th {
+  vertical-align: middle; /* Căn giữa theo chiều dọc */
+
+}
+
+.btn-groupuser {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.product-list {
+  padding: 20px;
+  overflow-x: auto; /* Thêm cuộn ngang nếu bảng quá rộng */
+}
+.product-table {
+  width: 100%; /* Đảm bảo bảng chiếm toàn bộ chiều rộng của phần tử chứa */
+  border-collapse: collapse; /* Kết hợp các đường biên để tránh khoảng cách */
+}
+.product-table th, .product-table td {
+  vertical-align: middle;
+  text-align: center; /* Căn giữa nội dung của các ô */
+  padding: 10px; /* Khoảng cách bên trong ô */
+}
+
+.product-thumbnail {
+  width: 70px; /* Kích thước cố định cho hình ảnh */
+  height: auto; /* Tự động điều chỉnh chiều cao để giữ tỷ lệ */
+  border-radius: 4px; /* Thêm bo góc cho hình ảnh */
+}
+
+.product-table td {
+  max-width: 200px; /* Kích thước tối đa cho các ô */
+  overflow: hidden; /* Ẩn phần nội dung vượt quá kích thước ô */
+  text-overflow: ellipsis; /* Hiển thị dấu ba chấm nếu nội dung quá dài */
+  white-space: nowrap; /* Ngăn nội dung xuống dòng */
+}
+.product-table th {
+  background-color: #f8f9fa; /* Màu nền nhẹ cho tiêu đề */
+  font-weight: bold; /* Làm đậm tiêu đề */
+  border-bottom: 2px solid #dee2e6; /* Đường viền dưới tiêu đề */
+}
+
+.product-table td .action-btn {
+  margin: 0 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.product-detail-thumbnail {
+  width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.action-btn {
+  margin: 0 5px;
+}
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+}
+/* Đặt màu nền và các hiệu ứng cho các nút phân trang */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination .page-item {
+  margin: 0 2px;
+}
+
+.pagination .page-link {
+  color: #007bff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination .page-link:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination .active .page-link {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+}
+
+.pagination .disabled .page-link {
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+.pagination .page-link {
+  cursor: pointer;
+}
+
+.pagination .prev,
+.pagination .next {
+  font-weight: bold;
+}
